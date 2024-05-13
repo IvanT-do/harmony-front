@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import classNames from "classnames";
 import "./style.scss";
 
 const links = [
@@ -20,9 +21,9 @@ const links = [
     }
 ];
 
-export default function Navbar() {
+export default function Navbar({ gap="normal" }) {
     return (
-        <nav className="navbar">
+        <nav className={classNames("navbar", "navbar_gap_"+gap)}>
             {
                 links.map(link => (
                     <Link to={link.url}>

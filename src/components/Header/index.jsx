@@ -1,16 +1,21 @@
 import { Link } from "react-router-dom";
 import Logo from "../Icons/Logo";
 import Navbar from "../Navbar";
+import classNames from "classnames";
 import "./style.scss";
 
-export default function Header() {
+export default function Header({ large= false, className }) {
     return (
-        <header className="header">
+        <header className={classNames("header", className)}>
             <Link to="/" className="header__logo">
                 <Logo className="header__logo-icon"/>
                 Гармония роста
             </Link>
-            <Navbar />
+
+            <Navbar
+                gap={large ? "large" : "normal"}
+            />
+
             <a
                 href="tel:+79656532426"
                 className="header__phone"
