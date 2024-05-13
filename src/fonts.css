@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Futura PT';
+    src: local('Futura PT Heavy'), local('Futura-PT-Heavy'),
+    url('./fonts/FuturaPTHeavy.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: local('Futura PT Medium'), local('Futura-PT-Medium'),
+    url('./fonts/FuturaPTMedium.otf') format('opentype');
+    font-weight: 450;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: local('Futura PT Light'), local('Futura-PT-Light'),
+    url('./fonts/FuturaPTLight.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}

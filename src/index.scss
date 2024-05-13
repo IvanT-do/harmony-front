@@ -1,0 +1,33 @@
+:root{
+  --color-text-main: #343434;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Futura PT', serif;
+  color: var(--color-text-main);
+  min-height: 100vh;
+  &.modal-open{
+    overflow: hidden;
+  }
+}
+
+#root{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: inherit;
+}
+
+.container{
+  max-width: 1400px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+}
