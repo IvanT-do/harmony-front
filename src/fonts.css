@@ -16,6 +16,14 @@
 
 @font-face {
     font-family: 'Futura PT';
+    src: local('Futura PT Book'), local('Futura-PT-Book'),
+    url('./fonts/FuturaPTBook.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT';
     src: local('Futura PT Light'), local('Futura-PT-Light'),
     url('./fonts/FuturaPTLight.otf') format('opentype');
     font-weight: 300;

@@ -1,33 +1,31 @@
 import { Link } from "react-router-dom";
+import "./style.scss";
 
 const links = [
     {
         title: "О центре",
-        url: "1"
+        url: "/about"
     },
     {
         title: "Специалисты",
-        url: "2"
+        url: "/employee"
     },
     {
         title: "Услуги",
-        url: "3"
+        url: "/services"
     },
     {
         title: "Контакты",
-        url: "4"
+        url: "/contacts"
     }
-]
+];
 
 export default function Navbar() {
     return (
         <nav className="navbar">
             {
                 links.map(link => (
-                    <Link
-                        to={link.url}
-                        className="navbar__link"
-                    >
+                    <Link to={link.url}>
                         {link.title}
                     </Link>
                 ))
