@@ -1,0 +1,65 @@
+.banner{
+  padding-top: 100px;
+  position: relative;
+}
+
+.banner__title{
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 130px;
+  &:nth-child(2){
+    margin-top: -25px;
+  }
+}
+
+.banner__text{
+  font-weight: 300;
+  width: 380px;
+  line-height: 20px;
+  margin-top: 60px;
+  font-size: 16px;
+}
+
+.banner__images{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top:0;
+  right:0;
+  z-index: -1;
+}
+
+.banner__img{
+  position: absolute;
+}
+
+.banner__elephant{
+  font-size: 345px;
+  bottom: 20px;
+  right: 0;
+}
+
+.banner__flower-a{
+  color: #FFD148;
+  font-size: 80px;
+  bottom: 70px;
+}
+
+.banner__flower-b{
+  color: #667AFB;
+  font-size: 83px;
+  right: -40px;
+  bottom: 50px;
+}
+
+.banner__star{
+  color: #F9367C;
+  font-size: 104px;
+  top: 75px;
+  right: 150px;
+}
+
+.banner__button{
+  width: 200px;
+  margin-top: 80px;
+}

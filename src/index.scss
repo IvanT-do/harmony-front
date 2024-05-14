@@ -1,5 +1,6 @@
 :root{
   --color-text-main: #343434;
+  --color-primary: #667AFB;
 }
 
 *{
@@ -25,7 +26,7 @@ body{
 }
 
 .container{
-  max-width: 1400px;
+  max-width: 1140px;
   width: 100%;
   padding: 0;
   margin: 0 auto;
@@ -34,4 +35,8 @@ body{
 
 .page-body{
   flex: 1 1 auto;
+}
+
+.section{
+  margin-top: 170px;
 }
