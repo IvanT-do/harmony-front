@@ -26,7 +26,7 @@ export default function Navbar({ gap="normal" }) {
         <nav className={classNames("navbar", "navbar_gap_"+gap)}>
             {
                 links.map(link => (
-                    <Link to={link.url}>
+                    <Link to={link.url} key={link.title}>
                         {link.title}
                     </Link>
                 ))
