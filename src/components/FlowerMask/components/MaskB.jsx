@@ -1,10 +1,10 @@
-export default function MaskB({ children, className, id }) {
+export default function MaskB({ children, id, ...props }) {
     return (
         <svg
-            className={className}
             viewBox="0 0 382 382"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            {...props}
         >
             { children }
             <defs>
