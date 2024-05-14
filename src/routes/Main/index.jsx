@@ -3,6 +3,8 @@ import HowWorkSection from "./components/HowWorkSection";
 import ServicesSection from "../../components/ServicesSection/index.jsx";
 
 import "./style.scss";
+import ProfSection from "../../components/ProfSection/index.jsx";
+import profi from "../../constants/profi.js";
 
 export default function MainPage() {
     return (
@@ -10,6 +12,7 @@ export default function MainPage() {
             <Banner />
             <HowWorkSection />
             <ServicesSection />
+            <ProfSection list={profi} />
         </>
     );
 }
