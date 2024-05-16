@@ -2,7 +2,7 @@ import Banner from "./components/Banner";
 import HowWorkSection from "./components/HowWorkSection";
 import ServicesSection from "../../components/ServicesSection/index.jsx";
 import ProfSection from "../../components/ProfSection/index.jsx";
-import ReviewsSection from "../../components/ReviewsSection/index.jsx";
+import ReviewsSection from "./components/ReviewsSection/index.jsx";
 import NewsSection from "./components/NewsSection/index.jsx";
 
 import profi from "../../constants/profi.js";
