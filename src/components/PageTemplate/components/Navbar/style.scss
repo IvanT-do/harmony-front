@@ -9,3 +9,23 @@
 .navbar_gap_large{
   gap: 90px
 }
+
+.navbar__link{
+  position: relative;
+
+  &:after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 0;
+    background: currentColor;
+    left: 0;
+    bottom: -2px;
+    transition: width .3s ease;
+    border-radius: 5px;
+  }
+
+  &:hover:after{
+    width: 100%;
+  }
+}
