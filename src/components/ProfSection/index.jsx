@@ -1,13 +1,20 @@
-import "./style.scss";
 import ProfCard from "./components/ProfCard";
+import IconCircleList from "./components/IconCircleList";
+import classNames from "classnames";
+
+import "./style.scss";
 
 const maskTypes = ["B", "A", "C"];
 
-export default function ProfSection({ list, showIcons=false }) {
+export default function ProfSection({ list, showIcons=false, className }) {
     return (
-        <div className="section prof">
+        <div className={classNames("section", "prof", className)}>
             <h2 className="section__title">
                 Наши специалисты
+
+                {
+                    showIcons && <IconCircleList />
+                }
             </h2>
             <div className="prof__grid">
                 {
@@ -16,6 +23,7 @@ export default function ProfSection({ list, showIcons=false }) {
                             {...item}
                             key={item.id}
                             maskType={maskTypes[index % maskTypes.length]}
+                            showIcons={showIcons}
                         />
                     ))
                 }

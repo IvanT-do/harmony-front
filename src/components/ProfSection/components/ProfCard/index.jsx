@@ -1,7 +1,9 @@
 import FlowerMask from "../../../FlowerMask";
+import IconCircleList from "../IconCircleList/index.jsx";
+
 import "./style.scss";
 
-export default function ProfCard({ maskType, image, name, text }) {
+export default function ProfCard({ maskType, image, name, text, showIcons, ...other }) {
     return (
         <div className="prof-card">
             <FlowerMask
@@ -16,6 +18,15 @@ export default function ProfCard({ maskType, image, name, text }) {
                 <p className="prof-card__text">
                     {text}
                 </p>
+
+                {
+                    showIcons && (
+                        <IconCircleList
+                            person={other}
+                            className="prof-card__icons"
+                        />
+                    )
+                }
             </div>
         </div>
     );

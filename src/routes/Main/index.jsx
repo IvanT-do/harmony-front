@@ -9,6 +9,8 @@ import profi from "../../constants/profi.js";
 import reviews from "../../constants/reviews.js";
 import news from "../../constants/news";
 
+const profiLocal = profi.slice(0, 4);
+
 import "./style.scss";
 
 export default function MainPage() {
@@ -17,7 +19,7 @@ export default function MainPage() {
             <Banner />
             <HowWorkSection />
             <ServicesSection />
-            <ProfSection list={profi} />
+            <ProfSection list={profiLocal} />
             <ReviewsSection list={reviews} />
             <NewsSection list={news} />
         </>

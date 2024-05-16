@@ -1,0 +1,18 @@
+.icon-circle{
+  aspect-ratio: 1;
+  width: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--ic-clr);
+  color: #fff;
+  flex-shrink: 0;
+  font-size: 17px;
+}
+
+.icon-circle__tooltip{
+  font-size: 16px;
+  font-weight: 450;
+  white-space: pre-wrap;
+}
