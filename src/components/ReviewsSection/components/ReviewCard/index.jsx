@@ -13,9 +13,9 @@ export default function ReviewCard({ image, name, text }) {
                     {name}
                 </h4>
             </div>
-            <div className="review-card__text">
+            <p className="review-card__text">
                 {text}
-            </div>
+            </p>
         </div>
     );
 }

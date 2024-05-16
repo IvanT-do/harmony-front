@@ -6,9 +6,9 @@ const maskTypes = ["B", "A", "C"];
 export default function ProfSection({ list, showIcons=false }) {
     return (
         <div className="section prof">
-            <div className="section__title">
+            <h2 className="section__title">
                 Наши специалисты
-            </div>
+            </h2>
             <div className="prof__grid">
                 {
                     list.map((item, index) => (

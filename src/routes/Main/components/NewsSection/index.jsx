@@ -1,17 +1,17 @@
-import ReviewCard from "./components/ReviewCard";
+import NewCard from "./components/NewCard/index.jsx";
 
 import "./style.scss";
 
-export default function ReviewsSection({ list }) {
+export default function NewsSection({ list }) {
     return (
-        <section className="section reviews">
+        <section className="section news">
             <h2 className="section__title">
-                Отзывы о центре
+                Новости центра
             </h2>
-            <div className="reviews__view">
+            <div className="news__view">
                 {
                     list.map(item => (
-                        <ReviewCard
+                        <NewCard
                             key={item.id}
                             {...item}
                         />
