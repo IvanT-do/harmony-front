@@ -1,0 +1,27 @@
+.review-card__head{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.review-card__image{
+  aspect-ratio: 1;
+  width: 41px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.review-card__name{
+  flex: 1 1 auto;
+  font-weight: 450;
+  font-size: 30px;
+}
+
+.review-card__text{
+  width: 330px;
+  padding-top: 20px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 300;
+}
