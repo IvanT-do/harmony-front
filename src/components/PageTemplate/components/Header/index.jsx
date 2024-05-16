@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Logo from "../Icons/Logo";
-import Navbar from "../Navbar";
+import Logo from "../../../Icons/Logo/index.jsx";
+import Navbar from "../Navbar/index.jsx";
 import classNames from "classnames";
 import "./style.scss";
 

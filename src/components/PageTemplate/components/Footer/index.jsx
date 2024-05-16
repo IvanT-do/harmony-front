@@ -1,4 +1,4 @@
-import Header from "../Header";
+import Header from "../Header/index.jsx";
 import "./style.scss";
 
 export default function Footer() {
