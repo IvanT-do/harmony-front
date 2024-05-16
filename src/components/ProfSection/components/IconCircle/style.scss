@@ -9,6 +9,11 @@
   color: #fff;
   flex-shrink: 0;
   font-size: 17px;
+  transition: all .3s ease;
+
+  &:hover{
+    transform: scale(1.1);
+  }
 }
 
 .icon-circle__tooltip{
