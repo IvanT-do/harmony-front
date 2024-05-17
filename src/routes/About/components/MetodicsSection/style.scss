@@ -1,0 +1,46 @@
+.metodics__grid{
+  --pb-add: 0;
+  --offset-val: 300px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 240px;
+  padding-bottom: calc(var(--pb-add) * var(--offset-val));
+  margin-top: 115px;
+}
+
+
+.metodic-card{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+  &:nth-child(even){
+    flex-direction: row-reverse;
+    transform: translateY(var(--offset-val));
+    justify-content: flex-end;
+  }
+}
+
+.metodic-card__image{
+  width: 280px;
+  height: 330px;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: all .3s ease;
+
+  &:hover{
+    transform: scale(1.02);
+  }
+}
+
+.metodic-card__content{
+  width: 250px;
+}
+
+.metodic-card__name{
+  font-weight: 450;
+  font-size: 26px;
+  line-height: 26px;
+  padding-bottom: 10px;
+}

@@ -16,7 +16,10 @@ export default function ProfSection({ list, showIcons=false, className }) {
                     showIcons && <IconCircleList />
                 }
             </h2>
-            <div className="prof__grid">
+            <div
+                className="prof__grid"
+                style={{ "--pb-add": Math.abs((list.length % 2) - 1) }}
+            >
                 {
                     list.map((item, index) => (
                         <ProfCard

@@ -6,7 +6,7 @@
 
   &:nth-of-type(even){
     flex-direction: row-reverse;
-    transform: translateY(300px);
+    transform: translateY(var(--offset-val));
   }
 }
 
