@@ -1,0 +1,17 @@
+$grid-areas: a, b, c, d, e, f, g, h;
+$i: 0;
+
+.services-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 300px 300px auto;
+  gap: 20px;
+  grid-template-areas: "a a c ." "b e d g" ". f . h";
+
+  @each $area in $grid-areas {
+    $i: $i + 1;
+    & > *:nth-child(#{$i}){
+      grid-area: #{$area};
+    }
+  }
+}

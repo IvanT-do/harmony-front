@@ -1,0 +1,27 @@
+.service-image{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.service-image__source{
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all .3s ease;
+
+  &:hover{
+    transform: scale(1.02);
+  }
+}
+
+.service-image__badge{
+  font-size: 81px;
+  color: #F9367C;
+  top: 0;
+  right: 30px;
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 5;
+}
