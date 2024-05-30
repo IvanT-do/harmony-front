@@ -11,7 +11,7 @@ export default function Banner() {
             <h1 className="banner__title">Центр речи</h1>
             <h1 className="banner__title">Гармония роста</h1>
             <p className="banner__text">Мы занимаемся постановкой звуков, развитием всех речевых процессов, внимания, памяти, мышления, общения.</p>
-            <ButtonLink className="banner__button" to="#">
+            <ButtonLink className="banner__button" to="/contacts">
                 Связаться
             </ButtonLink>
             <div className="banner__images">

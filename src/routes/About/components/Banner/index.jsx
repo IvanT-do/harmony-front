@@ -41,7 +41,7 @@ export default function Banner() {
                     Проблемы, с которыми мы работаем: неправильное произношение звуков, задержка речевого развития, поведение аутического спектра, заикание, страхки, агрессия, истерики, зависимость от мобильных устройств. Приходите на бесплатную консультацию!
                 </p>
 
-                <ButtonLink to="#" className="about-banner__action">
+                <ButtonLink to="/contacts" className="about-banner__action">
                     Консультация
                 </ButtonLink>
             </div>
