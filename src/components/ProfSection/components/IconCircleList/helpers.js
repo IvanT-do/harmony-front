@@ -18,7 +18,7 @@ export const resolvePersonCircles = (person, icons) => {
                 }
                 break;
             case "book":
-                if(person.qualification_improvement){
+                if(person.qualificationImprovement){
                     actual.push({
                         ...icon,
                         tooltip: "Пройдены курсы повышения квалификации"

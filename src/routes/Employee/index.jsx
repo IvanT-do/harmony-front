@@ -1,15 +1,24 @@
-import ProfSection from "../../components/ProfSection/index.jsx";
+import {useLoaderData} from "react-router-dom";
+import AwaitGroup from "../../components/AwaitGroup";
 
-import profi from "../../constants/profi.js";
+import ProfSection from "../../components/ProfSection/index.jsx";
 
 import "./style.scss";
 
 export default function EmployeePage() {
+    const data = useLoaderData();
+
     return (
-        <ProfSection
-            showIcons
-            list={profi}
-            className="employee-list"
-        />
+        <AwaitGroup resolve={data}>
+            {
+                ({ experts }) => (
+                    <ProfSection
+                        showIcons
+                        list={experts}
+                        className="employee-list"
+                    />
+                )
+            }
+        </AwaitGroup>
     );
 }

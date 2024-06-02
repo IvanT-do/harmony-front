@@ -3,6 +3,8 @@ import { createBrowserRouter } from "react-router-dom";
 import PageTemplate from "../components/PageTemplate/index.jsx";
 
 import {mainLoader} from "./Main/loader.js";
+import {aboutLoader} from "./About/loader.js";
+import {expertLoader} from "./Employee/loader.js";
 
 const router = createBrowserRouter([
     {
@@ -17,10 +19,12 @@ const router = createBrowserRouter([
             {
                 path: "about",
                 Component: lazy(() => import("./About")),
+                loader: aboutLoader
             },
             {
                 path: "employee",
                 Component: lazy(() => import("./Employee")),
+                loader: expertLoader
             },
             {
                 path: "services",

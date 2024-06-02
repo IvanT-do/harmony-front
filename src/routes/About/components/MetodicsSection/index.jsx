@@ -1,5 +1,3 @@
-import metodics from "../../../../constants/metodics.js";
-
 import "./style.scss";
 
 const MetodicCard = ({ image, name, text }) => {
@@ -22,7 +20,7 @@ const MetodicCard = ({ image, name, text }) => {
     );
 }
 
-export default function MetodicsSection() {
+export default function MetodicsSection({ list }) {
     return (
         <section className="section metodics">
             <h4 className="section__title">
@@ -30,10 +28,10 @@ export default function MetodicsSection() {
             </h4>
             <div
                 className="metodics__grid"
-                style={{ "--pb-add": Math.abs((metodics.length % 2) - 1) }}
+                style={{ "--pb-add": Math.abs((list.length % 2) - 1) }}
             >
                 {
-                    metodics.map(item => (
+                    list.map(item => (
                         <MetodicCard
                             key={item.id}
                             {...item}
