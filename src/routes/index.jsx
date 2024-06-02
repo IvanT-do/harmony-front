@@ -2,6 +2,8 @@ import {lazy} from "react";
 import { createBrowserRouter } from "react-router-dom";
 import PageTemplate from "../components/PageTemplate/index.jsx";
 
+import {mainLoader} from "./Main/loader.js";
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -10,6 +12,7 @@ const router = createBrowserRouter([
             {
                 path: "",
                 Component: lazy(() => import("./Main")),
+                loader: mainLoader
             },
             {
                 path: "about",
