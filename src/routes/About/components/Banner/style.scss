@@ -2,6 +2,13 @@
   margin-top: 100px;
   position: relative;
 }
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .about-banner{
+    margin-top: 60px;
+  }
+}
 
 .about-banner__content{
   max-width: 500px;
@@ -34,6 +41,16 @@
   height: 100%;
   top:0;
   left:0;
+}
+@media (max-width: 991.98px) {
+  .about-banner__pictures{
+    transform: scale(0.7) translateY(300px) translateX(80px);
+  }
+}
+@media (max-width: 767.98px) {
+  .about-banner__pictures{
+    display: none;
+  }
 }
 
 .about-banner__picture{

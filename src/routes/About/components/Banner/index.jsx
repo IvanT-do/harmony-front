@@ -30,7 +30,7 @@ export default function Banner() {
             
             <div className="about-banner__content">
                 <h2 className="about-banner__title">
-                    Приглашаем вас<br/>
+                    Приглашаем вас <br/>
                     на занятия!
                 </h2>
 

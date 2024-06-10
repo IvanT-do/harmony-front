@@ -29,7 +29,7 @@
 
 .mobile-menu__logo{
   display: flex;
-  font-size: 20px;
+  font-size: 25px;
   align-items: center;
   gap: 15px;
   margin-bottom: 90px;
@@ -38,11 +38,6 @@
 
 .mobile-menu__logo-icon{
   color: #667AFB;
-}
-
-.mobile-menu__wrapper{
-  & .hamburger-react{
-  }
 }
 
 .mobile-menu__wrapper_view{
