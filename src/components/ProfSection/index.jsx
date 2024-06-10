@@ -13,7 +13,7 @@ export default function ProfSection({ list, showIcons=false, className }) {
                 Наши специалисты
 
                 {
-                    showIcons && <IconCircleList />
+                    showIcons && <IconCircleList className="prof__icons"/>
                 }
             </h2>
             <div

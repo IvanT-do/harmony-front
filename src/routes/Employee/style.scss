@@ -1,3 +1,10 @@
 .employee-list{
   margin-top: 130px;
 }
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .employee-list{
+    margin-top: 80px;
+  }
+}

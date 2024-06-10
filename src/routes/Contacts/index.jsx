@@ -3,6 +3,7 @@ import Mail from "../../components/Icons/Mail";
 import Phone from "../../components/Icons/Phone";
 
 import "./style.scss";
+import useMediaQuery from "../../utils/useMediaQuery.js";
 
 const ContactsLink = ({ icon, color, children }) => {
     return (
@@ -22,16 +23,34 @@ const ContactsLink = ({ icon, color, children }) => {
     );
 }
 
+const YandexMap = () => {
+    return (
+        <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=37.655147%2C55.729566&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCggxMDA1MDEwORI70KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCh0LDRgNC40L3RgdC60LjQuSDQv9GA0L7QtdC30LQiCg0WoBZCFWbrXkI%2C&z=17.47"
+            allowFullScreen={true}
+            className="contacts__map"
+        />
+    );
+}
+
 export default function ContactsPage() {
+    const {lower} = useMediaQuery();
+
+    const mapInContent = lower("lg");
+
     return (
         <section className="contacts">
             <div className="contacts__content">
-                <h2 className="contacts__title">
+                <h2 className="section__title">
                     Как добраться?
                 </h2>
                 <p className="contacts__address">
                     Мы находимся по адресу г. Москва, Саринский проезд, д.49
                 </p>
+
+                {
+                    mapInContent && <YandexMap />
+                }
 
                 <div className="contacts__links">
                     <ContactsLink color="#667AFB" icon={<Phone />}>
@@ -47,11 +66,9 @@ export default function ContactsPage() {
                     </ContactsLink>
                 </div>
             </div>
-            <iframe
-                src="https://yandex.ru/map-widget/v1/?ll=37.655147%2C55.729566&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCggxMDA1MDEwORI70KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINCh0LDRgNC40L3RgdC60LjQuSDQv9GA0L7QtdC30LQiCg0WoBZCFWbrXkI%2C&z=17.47"
-                allowFullScreen={true}
-                className="contacts__map"
-            />
+            {
+                !mapInContent && <YandexMap />
+            }
         </section>
     );
 }

@@ -1,9 +1,14 @@
 import FlowerMask from "../../../FlowerMask";
 import IconCircleList from "../IconCircleList/index.jsx";
+import useMediaQuery from "../../../../utils/useMediaQuery.js";
 
 import "./style.scss";
 
 export default function ProfCard({ maskType, image, name, text, showIcons, ...other }) {
+    const {lower} = useMediaQuery();
+
+    const circlesInName = lower("md");
+
     return (
         <div className="prof-card">
             <FlowerMask
@@ -14,13 +19,22 @@ export default function ProfCard({ maskType, image, name, text, showIcons, ...ot
             <div className="prof-card__content">
                 <h4 className="prof-card__name">
                     {name}
+                    {
+                        showIcons && circlesInName && (
+                            <IconCircleList
+                                person={other}
+                                className="prof-card__icons"
+                            />
+                        )
+                    }
+
                 </h4>
                 <p className="prof-card__text">
                     {text}
                 </p>
 
                 {
-                    showIcons && (
+                    showIcons && !circlesInName && (
                         <IconCircleList
                             person={other}
                             className="prof-card__icons"
