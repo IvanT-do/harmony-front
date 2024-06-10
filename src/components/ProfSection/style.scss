@@ -9,3 +9,16 @@
   margin-top: 90px;
   padding-bottom: calc(var(--pb-add) * var(--offset-val));
 }
+@media (max-width: 991.98px) {
+  .prof__grid{
+    --offset-val: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    row-gap: 80px;
+    margin-top: 60px;
+  }
+}
+@media (max-width: 767.98px) {
+}

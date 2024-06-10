@@ -9,9 +9,20 @@
 .navbar_gap_large{
   gap: 90px
 }
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .navbar{
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    width: 100%;
+  }
+}
 
 .navbar__link{
   position: relative;
+  display: block;
 
   &:after{
     content: '';
@@ -27,5 +38,13 @@
 
   &:hover:after{
     width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .navbar__link {
+    font-size: 25px;
+    font-weight: 300;
   }
 }

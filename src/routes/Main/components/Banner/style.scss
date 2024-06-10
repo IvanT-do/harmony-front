@@ -2,6 +2,13 @@
   padding-top: 100px;
   position: relative;
 }
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .banner{
+    padding-top: 60px;
+  }
+}
 
 .banner__title{
   font-weight: 600;
@@ -9,6 +16,19 @@
   line-height: 130px;
   &:nth-child(2){
     margin-top: -25px;
+  }
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .banner__title{
+    font-size: 50px;
+    line-height: 64px;
+    text-align: center;
+
+    &:nth-child(2){
+      margin-top: 0;
+    }
   }
 }
 
@@ -19,6 +39,17 @@
   margin-top: 60px;
   font-size: 16px;
 }
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .banner__text{
+    width: 100%;
+    line-height: 23px;
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: center;
+  }
+}
 
 .banner__images{
   position: absolute;
@@ -27,6 +58,15 @@
   top:0;
   right:0;
   z-index: -1;
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .banner__images{
+    position: relative;
+    width: 100%;
+    height: 390px;
+  }
 }
 
 .banner__img{
@@ -38,11 +78,29 @@
   bottom: 20px;
   right: 0;
 }
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .banner__elephant{
+    font-size: 237px;
+    right: 50%;
+    transform: translateX(60%);
+  }
+}
 
 .banner__flower-a{
   color: #FFD148;
   font-size: 80px;
   bottom: 70px;
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .banner__flower-a{
+    font-size: 52px;
+    bottom: 70px;
+    left: 40px;
+  }
 }
 
 .banner__flower-b{
@@ -51,6 +109,15 @@
   right: -40px;
   bottom: 50px;
 }
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .banner__flower-b{
+    font-size: 50px;
+    right: 40px;
+    bottom: 50px;
+  }
+}
 
 .banner__star{
   color: #F9367C;
@@ -58,8 +125,24 @@
   top: 75px;
   right: 150px;
 }
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .banner__star{
+    font-size: 60px;
+    top: 75px;
+    right: 150px;
+  }
+}
 
 .banner__button{
   width: 200px;
   margin-top: 80px;
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .banner__button{
+    margin: 60px auto 0 auto;
+  }
 }

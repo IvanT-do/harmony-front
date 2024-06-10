@@ -21,9 +21,9 @@ const links = [
     }
 ];
 
-export default function Navbar({ gap="normal" }) {
+export default function Navbar({ gap="normal", className }) {
     return (
-        <nav className={classNames("navbar", "navbar_gap_"+gap)}>
+        <nav className={classNames("navbar", "navbar_gap_"+gap, className)}>
             {
                 links.map(link => (
                     <Link

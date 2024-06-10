@@ -13,24 +13,30 @@ body{
   font-family: 'Futura PT', serif;
   color: var(--color-text-main);
   min-height: 100vh;
-  &.modal-open{
-    overflow: hidden;
-  }
 }
 
 #root{
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   min-height: inherit;
 }
 
 .container{
-  max-width: 1140px;
+  max-width: 1170px;
   width: 100%;
-  padding: 0;
+  padding: 0 15px;
   margin: 0 auto;
   position: relative;
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .container{
+    padding: 0 20px;
+    overflow: hidden;
+  }
 }
 
 .page-body{
@@ -39,10 +45,27 @@ body{
 
 .section{
   margin-top: 200px;
+  width: 100%;
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .section{
+    margin-top: 146px;
+  }
 }
 
 .section__title{
   white-space: pre-wrap;
   font-weight: 600;
   font-size: 50px;
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .section__title{
+    white-space: unset;
+    font-size: 34px;
+    line-height: 30px;
+  }
 }

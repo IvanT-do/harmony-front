@@ -1,6 +1,19 @@
 .news__view{
-  margin-top: 90px;
+  margin-top: 60px;
   display: flex;
   justify-content: space-between;
   padding: 0 80px;
+  width: 100%;
+}
+@media (max-width: 991.98px) {
+  .news__view{
+    padding: 0;
+    flex-direction: column;
+    gap: 80px;
+  }
+}
+@media (max-width: 767.98px) {
+  .news__view{
+    margin-top: 90px;
+  }
 }

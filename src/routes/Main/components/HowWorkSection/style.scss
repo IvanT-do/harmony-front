@@ -3,3 +3,12 @@
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 991.98px) {
+  .how-work__view{
+    flex-direction: column;
+    align-items: center;
+    gap: 86px;
+  }
+}
+@media (max-width: 767.98px) {
+}

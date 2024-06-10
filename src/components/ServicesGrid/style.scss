@@ -15,3 +15,19 @@ $i: 0;
     }
   }
 }
+
+@media (max-width: 991.98px) {
+  .services-grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 250px auto 250px auto;
+    grid-template-areas: "a c" "b d" "e g" "f h";
+  }
+}
+@media (max-width: 767.98px) {
+  .services-grid {
+    display: block;
+    & > *:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+}

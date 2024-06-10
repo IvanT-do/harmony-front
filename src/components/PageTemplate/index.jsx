@@ -8,7 +8,7 @@ export default function PageTemplate() {
     return (
         <ReactLenis root>
             <div className="container">
-                <Header />
+                <Header showMobileMenu />
             </div>
             <main className="container page-body">
                 <Outlet />

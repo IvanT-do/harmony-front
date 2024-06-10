@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
 import Logo from "../../../Icons/Logo/index.jsx";
 import Navbar from "../Navbar/index.jsx";
+import MobileMenu from "./components/MobileMenu";
 import classNames from "classnames";
+import useMediaQuery from "../../../../utils/useMediaQuery.js";
+
 import "./style.scss";
 
-export default function Header({ large= false, className }) {
+export default function Header({large= false, className, showMobileMenu=false }) {
+    const { is } = useMediaQuery();
+
     return (
         <header className={classNames("header", className)}>
             <Link to="/" className="header__logo">
@@ -12,16 +17,30 @@ export default function Header({ large= false, className }) {
                 Гармония роста
             </Link>
 
-            <Navbar
-                gap={large ? "large" : "normal"}
-            />
+            {
+                is("md") && (
+                    <Navbar
+                        gap={large ? "large" : "normal"}
+                    />
+                )
+            }
 
-            <a
-                href="tel:+79656532426"
-                className="header__phone"
-            >
-                +7 965 653 24 26
-            </a>
+            {
+                (is("md") || !showMobileMenu) && (
+                    <a
+                        href="tel:+79656532426"
+                        className="header__phone"
+                    >
+                        +7 965 653 24 26
+                    </a>
+                )
+            }
+
+            {
+                showMobileMenu && (
+                    <MobileMenu viewLower="md" />
+                )
+            }
         </header>
     );
 }

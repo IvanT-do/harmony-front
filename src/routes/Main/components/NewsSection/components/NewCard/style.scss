@@ -6,6 +6,17 @@
     transform: scale(1.02);
   }
 }
+@media (max-width: 991.98px) {
+  .new-card{
+    width: 100%;
+
+    &:hover{
+      transform: none
+    }
+  }
+}
+@media (max-width: 767.98px) {
+}
 
 .new-card__image{
   height: 350px;
@@ -19,6 +30,15 @@
   font-size: 26px;
   padding-top: 30px;
 }
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .new-card__title{
+    font-weight: 450;
+    font-size: 28px;
+    padding-top: 30px;
+  }
+}
 
 .new-card__text{
   font-weight: 300;
@@ -26,4 +46,12 @@
   line-height: 20px;
   white-space: pre-wrap;
   padding-top: 20px;
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 767.98px) {
+  .new-card__text{
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
