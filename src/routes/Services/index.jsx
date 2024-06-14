@@ -1,7 +1,10 @@
 import ServicesGrid from "../../components/ServicesGrid";
+import useDocumentTitle from "../../utils/useDocumentTitle.js";
 import "./style.scss";
 
 export default function ServicesPage() {
+    useDocumentTitle("Услуги");
+
     return (
         <section className="services">
             <h2 className="services__title">

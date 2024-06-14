@@ -7,9 +7,11 @@ import ServicesSection from "./components/ServicesSection/index.jsx";
 import ProfSection from "../../components/ProfSection/index.jsx";
 import ReviewsSection from "./components/ReviewsSection/index.jsx";
 import NewsSection from "./components/NewsSection/index.jsx";
+import useDocumentTitle from "../../utils/useDocumentTitle.js";
 
 export default function MainPage() {
     const data = useLoaderData();
+    useDocumentTitle();
 
     return (
         <AwaitGroup resolve={data}>

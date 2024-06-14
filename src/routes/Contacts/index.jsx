@@ -1,9 +1,10 @@
 import VK from "../../components/Icons/VK";
 import Mail from "../../components/Icons/Mail";
 import Phone from "../../components/Icons/Phone";
+import useMediaQuery from "../../utils/useMediaQuery.js";
+import useDocumentTitle from "../../utils/useDocumentTitle.js";
 
 import "./style.scss";
-import useMediaQuery from "../../utils/useMediaQuery.js";
 
 const ContactsLink = ({ icon, color, children }) => {
     return (
@@ -35,6 +36,7 @@ const YandexMap = () => {
 
 export default function ContactsPage() {
     const {lower} = useMediaQuery();
+    useDocumentTitle("Контакты");
 
     const mapInContent = lower("lg");
 
