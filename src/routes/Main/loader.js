@@ -1,6 +1,7 @@
 import {defer} from "react-router-dom";
 import api from "../../api/index.js";
 
+// Загрузчик данных главной страницы
 export const mainLoader = () => {
     return defer({
         experts: api.fetchExperts(4),

@@ -1,6 +1,7 @@
 import Header from "../Header/index.jsx";
 import "./style.scss";
 
+// компонент подвала сайта
 export default function Footer() {
     return (
         <div className="container">

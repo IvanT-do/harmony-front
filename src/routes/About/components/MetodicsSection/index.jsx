@@ -1,5 +1,6 @@
 import "./style.scss";
 
+// Компонент методики
 const MetodicCard = ({ image, name, text }) => {
     return (
         <div className="metodic-card">
@@ -20,6 +21,7 @@ const MetodicCard = ({ image, name, text }) => {
     );
 }
 
+// Компонент раздела методик
 export default function MetodicsSection({ list }) {
     return (
         <section className="section metodics">

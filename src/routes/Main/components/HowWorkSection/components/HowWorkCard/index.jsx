@@ -1,6 +1,7 @@
 import FlowerMask from "../../../../../../components/FlowerMask/index.jsx";
 import "./style.scss";
 
+// Компонент карточки раздела "Как мы работаем"
 export default function HowWorkCard({ image, maskType="A", title, text }) {
     return (
         <div className="how-card">

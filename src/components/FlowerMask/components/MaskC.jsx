@@ -1,3 +1,4 @@
+// маска изображений тип C
 export default function MaskC({ children, id, ...props }) {
     return (
         <svg

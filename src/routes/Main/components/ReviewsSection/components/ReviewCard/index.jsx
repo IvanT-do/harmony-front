@@ -1,5 +1,6 @@
 import "./style.scss";
 
+// Компонент карточки отзыва
 export default function ReviewCard({ image, name, text }) {
     return (
         <div className="review-card">

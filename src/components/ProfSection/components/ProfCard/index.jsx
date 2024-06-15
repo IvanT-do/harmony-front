@@ -4,6 +4,7 @@ import useMediaQuery from "../../../../utils/useMediaQuery.js";
 
 import "./style.scss";
 
+// Компонент специалиста
 export default function ProfCard({ maskType, image, name, text, showIcons, ...other }) {
     const {lower} = useMediaQuery();
 

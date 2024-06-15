@@ -7,6 +7,7 @@ import img3 from "./assets/a6e25cf8eb055d34592d68afec627671.png";
 
 import "./style.scss";
 
+// Баннер страницы "О центре"
 export default function Banner() {
     return (
         <section className="about-banner">

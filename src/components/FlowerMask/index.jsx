@@ -4,6 +4,7 @@ import {masks} from "./components/index.js";
 import {gsap} from "gsap";
 import "./style.scss";
 
+// функциональный компонент маскирования изображений
 export default function FlowerMask({ type, src, className }) {
     const Mask = useMemo(() => {
         if(masks[type.toUpperCase()]){

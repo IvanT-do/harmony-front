@@ -9,6 +9,7 @@ import img2 from "./assets/5234395a4093da42ac964be4ee325324.png";
 import img3 from "./assets/447e9c725ad0155e5e3f4dacb6a90c36.png";
 import img4 from "./assets/3396a51b8f8ce3d880da0d168992ef10.png";
 
+// компонент списка услуг
 export default function ServicesGrid({ className, showBadges = false }) {
     return (
         <div className={classNames("services-grid", className)}>

@@ -9,6 +9,7 @@ const breakpoints = {
     xxl: 1400
 }
 
+// функционал определения текущих размеров страницы
 const getMediaFunc = (width) => {
     const is = (bp) => {
         const point = breakpoints[bp] ?? 0;
@@ -39,6 +40,7 @@ const getMediaFunc = (width) => {
     };
 };
 
+// Хук определения текущего размера страницы, отслеживает изменение размера браузера
 export default function useMediaQuery(){
     const [width, setWidth] = useState(window.innerWidth);
 

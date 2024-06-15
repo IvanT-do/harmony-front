@@ -7,6 +7,7 @@ import useMediaQuery from "../../../../utils/useMediaQuery.js";
 
 import "./style.scss";
 
+// компонент шапки сайта
 export default function Header({large= false, className, showMobileMenu=false }) {
     const { is } = useMediaQuery();
 

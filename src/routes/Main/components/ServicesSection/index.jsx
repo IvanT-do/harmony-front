@@ -2,6 +2,7 @@ import ServicesGrid from "../../../../components/ServicesGrid/index.jsx";
 
 import "./style.scss";
 
+// Компонент раздела услуг
 export default function ServicesSection() {
     return (
         <div className="section services-section">

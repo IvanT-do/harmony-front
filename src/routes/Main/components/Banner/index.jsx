@@ -8,10 +8,12 @@ import gsap from "gsap";
 
 import "./style.scss";
 
+// Компонент баннера главной страницы
 export default function Banner() {
     useEffect(() => {
         const animate = (target) => {
             let animation = { current: null };
+            //Анимация фигур на баннере
             const animationStart = () => {
                 animation.current = gsap.to(target, {
                     x: "random(-30, 30)",

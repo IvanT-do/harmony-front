@@ -7,6 +7,7 @@ import LoaderPage from "./components/LoaderPage";
 import './fonts.css';
 import './index.scss';
 
+// Запуск React приложения
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
       <Suspense fallback={<LoaderPage />}>

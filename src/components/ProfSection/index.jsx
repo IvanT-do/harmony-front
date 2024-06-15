@@ -6,6 +6,7 @@ import "./style.scss";
 
 const maskTypes = ["B", "A", "C"];
 
+// Компонент раздела специалистов
 export default function ProfSection({ list, showIcons=false, className }) {
     return (
         <div className={classNames("section", "prof", className)}>

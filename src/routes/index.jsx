@@ -6,6 +6,7 @@ import {mainLoader} from "./Main/loader.js";
 import {aboutLoader} from "./About/loader.js";
 import {expertLoader} from "./Employee/loader.js";
 
+// Роутинг сайта
 const router = createBrowserRouter([
     {
         path: "/",

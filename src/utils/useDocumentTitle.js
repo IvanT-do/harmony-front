@@ -1,6 +1,7 @@
 import {useEffect, useRef} from "react";
 const SITE_NAME = "Центр речи \"Гармония роста\"";
 
+// Хук изменения названия страницы
 export default function useDocumentTitle(title = ""){
     const defaultTitle = useRef(document.title);
 

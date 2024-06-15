@@ -9,6 +9,7 @@ import ReviewsSection from "./components/ReviewsSection/index.jsx";
 import NewsSection from "./components/NewsSection/index.jsx";
 import useDocumentTitle from "../../utils/useDocumentTitle.js";
 
+// Компонент главной страницы
 export default function MainPage() {
     const data = useLoaderData();
     useDocumentTitle();

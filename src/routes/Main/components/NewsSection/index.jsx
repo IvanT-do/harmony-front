@@ -2,6 +2,7 @@ import NewCard from "./components/NewCard/index.jsx";
 
 import "./style.scss";
 
+// Компонент раздела новостей
 export default function NewsSection({ list }) {
     return (
         <section className="section news">

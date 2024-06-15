@@ -5,6 +5,7 @@ import useDocumentTitle from "../../utils/useDocumentTitle.js";
 
 import "./style.scss";
 
+// Компонент страницы Специалисты
 export default function EmployeePage() {
     const data = useLoaderData();
     useDocumentTitle("Специалисты");

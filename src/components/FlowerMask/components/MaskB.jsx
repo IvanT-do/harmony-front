@@ -1,3 +1,4 @@
+// маска изображений тип B
 export default function MaskB({ children, id, ...props }) {
     return (
         <svg

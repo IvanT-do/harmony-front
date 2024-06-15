@@ -1,5 +1,6 @@
 import "./style.scss";
 
+// компонент карточки новости
 export default function NewCard({ image, title, text }) {
     return (
         <div className="new-card">

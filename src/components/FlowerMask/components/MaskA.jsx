@@ -1,3 +1,4 @@
+// маска изображений тип А
 export default function MaskA({ children, id, ...props }) {
     return (
         <svg

@@ -2,6 +2,7 @@ import ReviewCard from "./components/ReviewCard/index.jsx";
 
 import "./style.scss";
 
+// Компонент раздела отзывов
 export default function ReviewsSection({ list }) {
     return (
         <section className="section reviews">

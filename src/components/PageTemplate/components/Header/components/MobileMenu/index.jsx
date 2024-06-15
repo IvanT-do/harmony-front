@@ -9,6 +9,7 @@ import classNames from "classnames";
 
 import "./style.scss";
 
+//Компонент мобильного меню
 export default function MobileMenu({ viewLower }) {
     const { lower } = useMediaQuery();
     const location = useLocation();

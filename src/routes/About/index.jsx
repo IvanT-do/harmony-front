@@ -4,6 +4,7 @@ import Banner from "./components/Banner/index.jsx";
 import MetodicsSection from "./components/MetodicsSection/index.jsx";
 import useDocumentTitle from "../../utils/useDocumentTitle.js";
 
+// Компонент страницы "О центре"
 export default function AboutPage() {
     const data = useLoaderData();
     useDocumentTitle("О центре");

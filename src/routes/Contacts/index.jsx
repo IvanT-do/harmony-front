@@ -6,6 +6,7 @@ import useDocumentTitle from "../../utils/useDocumentTitle.js";
 
 import "./style.scss";
 
+// Компонент ссылки контактов
 const ContactsLink = ({ icon, color, children }) => {
     return (
         <div className="contacts-link">
@@ -24,6 +25,7 @@ const ContactsLink = ({ icon, color, children }) => {
     );
 }
 
+// Компонент карты яндекс
 const YandexMap = () => {
     return (
         <iframe
@@ -34,6 +36,7 @@ const YandexMap = () => {
     );
 }
 
+// Компонент страницы контактов
 export default function ContactsPage() {
     const {lower} = useMediaQuery();
     useDocumentTitle("Контакты");

@@ -27,7 +27,7 @@ const items = [
         text: "Проведение итоговых консультаций с пациентами"
     },
 ];
-
+// компонент раздела "Как мы работаем"
 export default function HowWorkSection() {
     const {is} = useMediaQuery();
     return (

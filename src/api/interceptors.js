@@ -1,5 +1,6 @@
+
+//Функционал добавления ко всем изображениям начальной ссылки
 export const useImageInterceptor = (axiosInstance) => {
-    //подстановка
     axiosInstance.interceptors.response.use((value) => {
         if(Array.isArray(value.data)){
             value.data = value.data.map(item => {
